@@ -1,0 +1,56 @@
+Device: 'cuda'
+Epoch: 001, Training Loss: 1.7553
+Epoch: 001, Validation Loss: 0.7556
+Epoch: 002, Training Loss: 0.7266
+Epoch: 002, Validation Loss: 0.6420
+Epoch: 003, Training Loss: 0.6168
+Epoch: 003, Validation Loss: 0.5804
+Epoch: 004, Training Loss: 0.5679
+Epoch: 004, Validation Loss: 0.5540
+Epoch: 005, Training Loss: 0.5392
+Epoch: 005, Validation Loss: 0.5216
+Epoch: 006, Training Loss: 0.5145
+Epoch: 006, Validation Loss: 0.5082
+Epoch: 007, Training Loss: 0.5018
+Epoch: 007, Validation Loss: 0.4980
+Epoch: 008, Training Loss: 0.4971
+Epoch: 008, Validation Loss: 0.4897
+Epoch: 009, Training Loss: 0.4882
+Epoch: 009, Validation Loss: 0.4881
+Epoch: 010, Training Loss: 0.4868
+Epoch: 010, Validation Loss: 0.4818
+Epoch: 011, Training Loss: 0.4834
+Epoch: 011, Validation Loss: 0.4778
+Epoch: 012, Training Loss: 0.4802
+Epoch: 012, Validation Loss: 0.4739
+Epoch: 013, Training Loss: 0.4746
+Epoch: 013, Validation Loss: 0.4707
+Epoch: 014, Training Loss: 0.4704
+Epoch: 014, Validation Loss: 0.4680
+Epoch: 015, Training Loss: 0.4655
+Epoch: 015, Validation Loss: 0.4658
+Epoch: 016, Training Loss: 0.4643
+Epoch: 016, Validation Loss: 0.4625
+Epoch: 017, Training Loss: 0.4601
+Epoch: 017, Validation Loss: 0.4613
+Epoch: 018, Training Loss: 0.4589
+Epoch: 018, Validation Loss: 0.4588
+Epoch: 019, Training Loss: 0.4545
+Epoch: 019, Validation Loss: 0.4573
+Epoch: 020, Training Loss: 0.4561
+Epoch: 020, Validation Loss: 0.4548
+Epoch: 021, Training Loss: 0.4526
+Epoch: 021, Validation Loss: 0.4540
+Epoch: 022, Training Loss: 0.4531
+Epoch: 022, Validation Loss: 0.4511
+Epoch: 023, Training Loss: 0.4497
+Epoch: 023, Validation Loss: 0.4512
+Early stopping after 23 Epochs.
+Evaluation on Test Data:
+Test AUC: 0.9605
+Test AP: 0.9621
+Test Recall: 0.9886
+Test Precision: 0.6768
+Test Accuracy: 0.7582
+Test F1: 0.8035
+The model has 223,104 trainable parameters.
