@@ -1,4 +1,4 @@
-## Code and results for *Semantic in GNN-based Recommendation*
+## Bridging RDF Knowledge Graphs and Graph Neural Networks in Recommender Systems
 
 * [Paper Recommendation](./paper-recommendation) using SOA-SW.
 
