@@ -1,4 +1,4 @@
-## Code and results for Chapter 7 *Semantic in GNN-based Recommendation*
+## Code and results for *Semantic in GNN-based Recommendation*
 
 * [Paper Recommendation](./paper-recommendation) using SOA-SW.
 
