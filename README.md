@@ -21,4 +21,4 @@ The GNN-based recommendation scripts for the homogeneous, bipartite, and heterog
 
 The result files contain the number of trained epochs, the validation and training loss for each epoch, the values of the test metrics and the number of trainable parameters of the GNN models. 
 
-More information about the characteristics of the content-based Node Feature characteris (cb_nld and cb_Literals) can be found in the following [document](./content-based-nodes-feature-characteristics.pdf).
+More information about the characteristics of the content-based Node Features (cb_nld and cb_Literals) can be found in the following [document](./content-based-nodes-feature-characteristics.pdf).
