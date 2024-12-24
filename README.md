@@ -1,4 +1,4 @@
-## Bridging RDF Knowledge Graphs and Graph Neural Networks in Recommender Systems
+## RDF Knowledge Graphs and Graph Neural Networks in Recommender Systems
 
 * [Paper Recommendation](./paper-recommendation) using SOA-SW.
 
@@ -6,7 +6,6 @@
 
 * [Task Recommendation](./task-recommendation) using LPWC.
 
-#### In the anonymous GitHub, please open the folder from the directory tree on the left side.
 
 The GNN-based recommendation scripts for the homogeneous, bipartite, and heterogeneous graph settings have the following structure (depending on whether GraphSAGE, GAT or HGT is used as GNN architecture):
 * 01_one-hot-encoding-{graphsage/gat/hgt}.py
