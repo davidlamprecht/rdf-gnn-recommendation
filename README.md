@@ -6,7 +6,7 @@ This repository contains supplementary materials for evaluating the integration 
 
 ## Evaluation Tasks and Scenarios
 
-We evaluate three recommendation scenarios using RDF knowledge graphs from **SOA-SW** and **LPWC** datasets:
+We evaluate three recommendation scenarios using RDF knowledge graphs from [**SOA-SW**](https://doi.org/10.5281/zenodo.10299428) and [**LPWC**](https://doi.org/10.5281/zenodo.10299365) datasets:
 
 1. **[Paper Recommendation](./paper-recommendation)**  
    Recommends research papers by predicting links between author and works. In this scenario, we perform link prediction on
