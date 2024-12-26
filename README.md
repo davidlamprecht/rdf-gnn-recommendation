@@ -1,5 +1,5 @@
-# Supplementary materials for ESWC 2025 paper: 
-## Benchmarking GNN-based Recommendation Systems with RDF Knowledge Graphs
+# Supplementary materials: 
+## Bridging RDF Knowledge Graphs with Graph Neural Networks for Semantically-Rich Recommender Systems
 
 This repository contains supplementary materials for evaluating the integration of RDF knowledge graphs and Graph Neural Networks (GNNs) to enhance recommendation systems across various scenarios, leveraging semantic and topological features extracted from RDF data.
 
