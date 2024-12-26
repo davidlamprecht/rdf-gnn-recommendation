@@ -6,14 +6,14 @@ This repository contains supplementary materials for evaluating the integration 
 
 ## Evaluation Tasks and Scenarios
 
-We evaluates three recommendation scenarios using RDF knowledge graphs from **SOA-SW** and **LPWC** datasets:
+We evaluate three recommendation scenarios using RDF knowledge graphs from **SOA-SW** and **LPWC** datasets:
 
 1. **[Paper Recommendation](./paper-recommendation)**  
    Recommends research papers by predicting links between author and works. In this scenario, we perform link prediction on
 the _author-work_ edge using the **SOA-SW** dataset, experimenting with both full
 heterogeneous graph setting (6 node types, 7 edge types) and bipartite graph
 setting with only _author_ and _work_ nodes along with their connecting
-edges (_author-work_ ).
+edges (_author-work_).
 
 2. **[Collaboration Recommendation](./collaboration-recommendation)**  
    Identifies potential research collaborators by predicting co-author relationships. In this scenario, link prediction is performed on the _author-author_ edge type using the **SOA-SW** dataset. This
@@ -26,9 +26,9 @@ graph (4 node types, 6 edge types) and bipartite graph setting focusing on _data
 ---
 
 ### RDF to Heterogeneous Graphs Transformation
-We employs [**AutoRDF2GML**](https://github.com/davidlamprecht/AutoRDF2GML) to transform RDF knowledge graphs into heterogeneous graph datasets. As illustrated in the figure below, AutoRDF2GML extracts the following two features:
+We employ [**AutoRDF2GML**](https://github.com/davidlamprecht/AutoRDF2GML) to transform RDF knowledge graphs into heterogeneous graph datasets. As illustrated in the figure below, AutoRDF2GML extracts the following two features:
 - **Content-based Features  $x_c$**: Derived from RDF **datatype** properties e.g., _contribution_ and _coAuthor_. Depending on the type of the literal, AutoRDF2GML applies specific transformation rules, e.g., _string_ literals are transformed into numerical features using BERT-based embedding models.
-- **Topology-based Features $x_t$**: Derived from RDF **object type** properties such as _hasAuthor_, generated using knowledge graph embedding models such as TransE, ComplEx, etc .
+- **Topology-based Features $x_t$**: Derived from RDF **object type** properties such as _hasAuthor_, generated using knowledge graph embedding models such as TransE, ComplEx, etc.
 
 ![Local Image](autordf2gml.png)
 
@@ -40,7 +40,7 @@ The primary objective of the evaluation is to benchmark widely-used GNN model ar
 
 | Script Name                                   | Description                                                                                     |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------|
-| `01_one-hot-encoding-{graphsage/gat/hgt}.py` | Initializes node features using one-hot encoding for the specified GNN architecture. This serves as non-semantic baseline           |
+| `01_one-hot-encoding-{graphsage/gat/hgt}.py` | Initializes node features using one-hot encoding for the specified GNN architecture. This serves as a non-semantic baseline           |
 | `02_nld-{graphsage/gat/hgt}.py`              | Incorporates node-level descriptors derived from natural language descriptions.                |
 | `03_literals-{graphsage/gat/hgt}.py`         | Adds literal features (categorical, numeric, etc.) to enrich node representations.             |
 | `04_transe-{graphsage/gat/hgt}.py`           | Utilizes TransE embeddings to encode topological properties.                                   |
@@ -67,7 +67,7 @@ The primary objective of the evaluation is to benchmark widely-used GNN model ar
 ---
 
 ## Additional Information
-The result files contain the number of trained epochs, the validation and training loss for each epoch, the values of the test metrics and the number of trainable parameters of the GNN models. More information about the characteristics of the content-based node Features (`cb_nld` and `cb_Literals`) can be found in the following [document](./content-based-nodes-feature-characteristics.pdf).
+The result files contain the number of trained epochs, the validation and training loss for each epoch, the values of the test metrics, and the number of trainable parameters of the GNN models. More information about the characteristics of the content-based node Features (`cb_nld` and `cb_Literals`) can be found in the following [document](./content-based-nodes-feature-characteristics.pdf).
 
 ---
 
